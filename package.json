@@ -1,0 +1,17 @@
+{
+  "name": "smart-contract-101",
+  "scripts": {
+    "build": "hardhat compile",
+    "local": "kill-port 8545 && hardhat node &",
+    "deploy:local": "hardhat run --network localhost scripts/deploy.ts",
+    "deploy:hello": "hardhat run --network sepolia scripts/deployHello.ts",
+    "deploy": "",
+    "start": ""
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.2",
+    "dotenv": "^16.0.3",
+    "hardhat": "^2.14.0",
+    "kill-port": "^2.0.1"
+  }
+}
